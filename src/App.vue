@@ -16,10 +16,6 @@ export default {
   components: {
     VsdHeader,
     VsdFooter
-  },
-
-  errorCaptured(error, component, info) {
-    console.log("An error occured:\n", error, component, info);
   }
 };
 </script>
