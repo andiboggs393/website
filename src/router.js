@@ -18,6 +18,12 @@ export default new Router({
       name: "about",
       component: () =>
         import(/* webpackChunkName: "about" */ "./views/About.vue")
+    },
+    {
+      path: "/markdown",
+      name: "markdown",
+      component: () =>
+        import(/* webpackChunkName: "markdown" */ "./views/Markdown.vue")
     }
   ]
 });
