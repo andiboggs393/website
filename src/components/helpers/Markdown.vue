@@ -1,5 +1,5 @@
 <template>
-    <div class="markdown">
+    <div class="vsd-markdown">
         <section class="page-section" id="markdown">
             <div class="container">
                 <VueShowdown
@@ -15,15 +15,20 @@
 import { VueShowdown } from 'vue-showdown'
 
 export default {
-    name: 'markdown',
+    name: 'vsd-markdown',
+    props: {
+        url: {
+            type: String
+        }
+    },
     components: {
         VueShowdown
     },
     data: () => ({
-        markdown: 'text'
+        markdown: ''
     }),
     created () {
-        this.request("https://raw.githubusercontent.com/VueSD/website/master/README.md")
+        this.request(this.url)
     },
     methods: {
         request(url) {
