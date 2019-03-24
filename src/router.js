@@ -20,10 +20,10 @@ export default new Router({
         import(/* webpackChunkName: "about" */ "./views/About.vue")
     },
     {
-      path: "/markdown",
-      name: "markdown",
+      path: "/resources",
+      name: "resources",
       component: () =>
-        import(/* webpackChunkName: "markdown" */ "./views/Markdown.vue")
+        import(/* webpackChunkName: "markdown" */ "./views/Resources.vue")
     }
   ]
 });
