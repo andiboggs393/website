@@ -27,20 +27,18 @@ export default {
     data: () => ({
         markdown: ''
     }),
-    created () {
-        this.request(this.url)
-    },
-    methods: {
-        request(url) {
-            var self = this
-            fetch(url)
-                .then(res => {
+    async mounted () {
+        await fetch(this.url)
+            .then(res => {
                     return res.text()
-                }).then(text => {
-                    console.log(text)
-                    self.markdown = text
-                })
-        }
+            })
+            .then(text => {
+                this.markdown = text
+            })
+            .catch(err => {
+                this.markdown = `# Unable to fetch
+                    ${err}`
+            })
     }
 }
 </script>
