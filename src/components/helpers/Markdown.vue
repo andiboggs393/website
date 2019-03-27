@@ -33,7 +33,10 @@ export default {
                     return res.text()
             })
             .then(text => {
-                this.markdown = text
+this.markdown = await fetch(this.url).then(res => res.text()).catch(err => {
+  return `# Unable to fetch
+    ${err}`
+})
             })
             .catch(err => {
                 this.markdown = `# Unable to fetch
