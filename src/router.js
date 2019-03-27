@@ -23,7 +23,7 @@ export default new Router({
       path: "/resources",
       name: "resources",
       component: () =>
-        import(/* webpackChunkName: "markdown" */ "./views/Resources.vue")
+        import(/* webpackChunkName: "resources" */ "./views/Resources.vue")
     }
   ]
 });
