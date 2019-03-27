@@ -28,20 +28,10 @@ export default {
         markdown: ''
     }),
     async mounted () {
-        await fetch(this.url)
-            .then(res => {
-                    return res.text()
-            })
-            .then(text => {
-this.markdown = await fetch(this.url).then(res => res.text()).catch(err => {
-  return `# Unable to fetch
-    ${err}`
-})
-            })
-            .catch(err => {
-                this.markdown = `# Unable to fetch
+        this.markdown = await fetch(this.url).then(res => res.text()).catch(err => {
+            return `# Unable to fetch
                     ${err}`
-            })
+        })
     }
 }
 </script>
