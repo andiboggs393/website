@@ -1,6 +1,6 @@
 <template>
     <div class="vsd-markdown">
-        <section class="page-section" id="markdown">
+        <section class="page-section">
             <div class="container">
                 <VueShowdown
                 :markdown='markdown'
