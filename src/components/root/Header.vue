@@ -5,6 +5,7 @@
         <img src="static/logo.png" alt="Vue San Diego">
       </router-link>
       <button
+        v-on:click="isVisible = !isVisible"
         class="navbar-toggler navbar-toggler-right"
         type="button"
         data-toggle="collapse"
@@ -15,7 +16,11 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
+      <div 
+        v-bind:class="{ show: isVisible }"
+        class="collapse navbar-collapse" 
+        id="navbarResponsive"
+      >
         <ul class="navbar-nav ml-auto my-2 my-lg-0">
           <li class="nav-item">
             <router-link :to="{ name: 'about' }" class="nav-link">About</router-link>
@@ -33,7 +38,10 @@ export default {
       type: String,
       default: "VueSD"
     }
-  }
+  },
+  data: () => ({
+      isVisible: false
+    })
 };
 </script>
 
