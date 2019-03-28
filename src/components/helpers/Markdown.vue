@@ -1,18 +1,13 @@
 <template>
     <div class="vsd-markdown">
         <section class="page-section">
-            <div class="container">
-                <VueShowdown
-                :markdown='markdown'
-                flavor="github"
-                :options="{ emoji: true }"/> 
+            <div class="container" v-html="markdown">
             </div>
         </section>
     </div>
 </template>
 
 <script>
-import { VueShowdown } from 'vue-showdown'
 
 export default {
     name: 'vsd-markdown',
@@ -20,9 +15,6 @@ export default {
         markdown: {
             type: String
         }
-    },
-    components: {
-        VueShowdown
     }
 }
 </script>
