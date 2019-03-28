@@ -1,11 +1,12 @@
 <template>
     <div class="resources">
-        <VsdMarkdown :url="url" />
+        <VsdMarkdown :markdown="markdown" />
     </div>
 </template>
 
 <script>
 import VsdMarkdown from '@/components/helpers/Markdown'
+import markdown from '../markdown/resources.md'
 
 export default {
     name: 'resources',
@@ -13,7 +14,7 @@ export default {
         VsdMarkdown
     },
     data: () => ({
-        url: "https://raw.githubusercontent.com/VueSD/website/master/README.md"
+        markdown
     })
 }
 </script>
