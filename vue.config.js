@@ -17,7 +17,12 @@ module.exports = {
       .use('markdown')
         .loader('markdown-loader')
         .options({
-          gfm: true
+          highlight: function(code) {
+            return require('highlightjs').highlightAuto(code).value;
+          },
+          gfm: true,
+          breaks: true,
+          sanatize: true
         })
         .end()
   }
