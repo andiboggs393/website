@@ -23,6 +23,9 @@
       >
         <ul class="navbar-nav ml-auto my-2 my-lg-0">
           <li class="nav-item">
+            <router-link :to="{ name: 'resources' }" class="nav-link">Resources</router-link>
+          </li>
+          <li class="nav-item">
             <router-link :to="{ name: 'about' }" class="nav-link">About</router-link>
           </li>
         </ul>
