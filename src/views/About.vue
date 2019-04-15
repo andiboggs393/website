@@ -22,5 +22,23 @@
       To support our organization with tax-deductible donations, please visit
       <a href="https://www.patreon.com/sdjs">patreon.com/sdjs</a>.
     </p>
+
+    <section>
+      <h3>Upcoming Events</h3>
+    </section>
+
+    <section>
+      <h3>GitHub Projects</h3>
+    </section>
   </main>
 </template>
+
+<script>
+import API from "@/api";
+
+export default {
+  async mounted() {
+    const projects = await API.githubProjects("VueSD");
+  }
+};
+</script>
