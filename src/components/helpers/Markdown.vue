@@ -1,21 +1,16 @@
 <template>
-    <div class="vsd-markdown">
-        <section class="page-section">
-            <div class="container" v-html="markdown">
-            </div>
-        </section>
-    </div>
+  <div class="vsd-markdown" v-html="markdown"></div>
 </template>
 
 <script>
 export default {
-    name: 'vsd-markdown',
-    props: {
-        markdown: {
-            type: String
-        }
+  name: "vsd-markdown",
+  props: {
+    markdown: {
+      type: String
     }
-}
+  }
+};
 </script>
 
 <style lang="scss">
@@ -83,7 +78,7 @@ Light style
 
 .hljs-regexp,
 .hljs-link {
-  color: rgb(79, 192, 141);;
+  color: rgb(79, 192, 141);
 }
 
 .hljs-symbol,
