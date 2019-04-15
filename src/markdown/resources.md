@@ -17,6 +17,7 @@
 
 ## Vue Communities
 
-- [San Diego Javascript Community](https://www.meetup.com/sandiegojs/)
+- [San Diego JavaScript Community](https://www.meetup.com/sandiegojs/)
+- [San Diego JS Slack](https://sdjs.slack.com/)
 - [Vue Land](https://vue-land.js.org/)
 - [Vuejs Developer Facebook Group](https://www.facebook.com/groups/vuejsdevelopers/)
