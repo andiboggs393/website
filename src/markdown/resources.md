@@ -1,5 +1,3 @@
-# VueSD Resources
-
 ## Learn Vue
 
 - [Vue Documentation](https://vuejs.org/v2/guide/)

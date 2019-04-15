@@ -1,12 +1,16 @@
 <template>
-  <div class="resources container">
+  <main class="container pt-5">
+    <header>
+      <h1>Vue Resources</h1>
+    </header>
+
     <VsdMarkdown :markdown="markdown" />
-  </div>
+  </main>
 </template>
 
 <script>
 import VsdMarkdown from "@/components/helpers/Markdown";
-import markdown from "../markdown/resources.md";
+import markdown from "@/markdown/resources.md";
 
 export default {
   name: "resources",
