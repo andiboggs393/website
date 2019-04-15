@@ -1,7 +1,7 @@
 <template>
   <main class="container pt-5">
     <header>
-      <h1>This is an about page</h1>
+      <h1>About VueSD</h1>
     </header>
 
     <p>
