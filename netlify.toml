@@ -1,0 +1,18 @@
+# https://www.netlify.com/docs/netlify-toml-reference/
+
+# Redirect default Netlify subdomain to primary domain
+[[redirects]]
+  from = "https://vuesd.netlify.com/*"
+  to = "https://vue.sandiegojs.org/:splat"
+  status = 301
+  force = true
+[[redirects]]
+  from = "http://vuesd.netlify.com/*"
+  to = "https://vue.sandiegojs.org/:splat"
+  status = 301
+  force = true
+[[redirects]]
+  from = "http://vue.sandiegojs.org/*"
+  to = "https://vue.sandiegojs.org/:splat"
+  status = 301
+  force = true
