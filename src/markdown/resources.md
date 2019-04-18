@@ -7,6 +7,11 @@
 - [Vue Mastery](https://www.vuemastery.com/courses)
 - [Vue School](https://vueschool.io/)
 
+## Code Editor
+
+- [VS Code](https://code.visualstudio.com/)
+- [Vetur Extension](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
+
 ## Vue CLI
 
 - [Configuration Reference](https://cli.vuejs.org/config/)
@@ -18,6 +23,5 @@
 ## Vue Communities
 
 - [San Diego JavaScript Community](https://www.meetup.com/sandiegojs/)
-- [San Diego JS Slack](https://sdjs.slack.com/)
 - [Vue Land](https://vue-land.js.org/)
 - [Vuejs Developer Facebook Group](https://www.facebook.com/groups/vuejsdevelopers/)
